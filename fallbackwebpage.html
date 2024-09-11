@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocked Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #004d00; /* Dark Green */
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffcc00; /* Yellow */
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .animated-face {
+            font-size: 100px;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        button {
+            background-color: #004d00;
+            color: #ffcc00;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #003300;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animated-face">😊</div>
+        <h1>Oops! This page is blocked.</h1>
+        <p>It seems you've tried to access a restricted page. Please go back or return to the homepage.</p>
+        <button onclick="window.history.back();">Go Back</button>
+    </div>
+</body>
+</html>
